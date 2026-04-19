@@ -9,7 +9,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the real trained Random Forest model
-model = joblib.load(r"C:\Users\91824\Desktop\Maize disease\backend\maize_model.pkl")
+model = joblib.load("maize_model.pkl")
+
 
 # Class names — must match EXACTLY how model was trained in train_model.py
 # CATEGORIES = ["Blight", "Common_Rust", "Gray_Leaf_Spot", "Healthy"]
